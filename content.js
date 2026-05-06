@@ -30,7 +30,25 @@ function applyColor(colorName) {
     [data-level="3"] { fill: ${palette[2]} !important; background-color: ${palette[2]} !important; }
     [data-level="4"] { fill: ${palette[3]} !important; background-color: ${palette[3]} !important; }
     
-    .ContributionCalendar-label { fill: var(--color-fg-muted) !important; }
+    .js-highlight-blob { 
+      fill: ${palette[2]} !important; 
+      fill-opacity: 0.5 !important; 
+      stroke: ${palette[3]} !important; 
+    }
+    .activity-overview-point { 
+      fill: ${palette[3]} !important; 
+      stroke: #0d1117 !important; 
+    }
+    line.activity-overview-axis { stroke: #444c56 !important; }
+
+    .Progress-item { background-color: ${palette[2]} !important; }
+
+    .Progress-item.color-calendar-graph-day-L1 { background-color: ${palette[0]} !important; }
+    .Progress-item.color-calendar-graph-day-L2 { background-color: ${palette[1]} !important; }
+    .Progress-item.color-calendar-graph-day-L3 { background-color: ${palette[2]} !important; }
+    .Progress-item.color-calendar-graph-day-L4 { background-color: ${palette[3]} !important; }
+
+    .ContributionCalendar-label { fill: #8b949e !important; color: #8b949e !important; }
   `;
 }
 
